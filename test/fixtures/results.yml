@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scorefinal: 1
+  user: one
+  test: one
+
+two:
+  scorefinal: 1
+  user: two
+  test: two

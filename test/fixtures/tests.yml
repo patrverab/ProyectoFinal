@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  namet1: MyString
+  t1: 1
+  namet2: MyString
+  t2: 1
+
+two:
+  namet1: MyString
+  t1: 1
+  namet2: MyString
+  t2: 1
