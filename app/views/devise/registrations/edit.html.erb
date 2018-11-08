@@ -2,17 +2,38 @@
 <div class="container">
 
 
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2> Completar Registro <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
 
   <div class="field">
-    <%= f.label :lastname %><br />
+    <%= f.label :Apellidos %><br />
     <%= f.text_field :lastname %>
   </div>
-
+  <br>
+  <div class="field">
+    <%= f.label :Fecha_de_nacimiento %><br />
+    <%= f.text_field :birthdate %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :Dirección %><br />
+    <%= f.text_field :address %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :Nivel_Educacional %><br />
+    <%= f.text_field :education %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :Preferencia_de_compra %><br />
+    <%= f.text_field :preferences %>
+  </div>
+  <br>
+  <br>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
