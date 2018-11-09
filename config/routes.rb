@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'tests/index'
-
+ get 'tests/index'
  resources :pages
  root to: 'pages#index'
 

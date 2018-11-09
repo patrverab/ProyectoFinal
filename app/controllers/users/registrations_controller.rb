@@ -20,9 +20,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # PUT /resource
-  # def update
-  #   super
-  # end
+   # def update
+   #   # acà hay que actualizar con los paramtros enviados
+   #   current_user.update(configure_account_update_params)
+   #   super
+   # end
 
   # DELETE /resource
   # def destroy
@@ -46,9 +48,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # If you have extra params to permit, append them to the sanitizer.
-  # def configure_account_update_params
-  #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
-  # end
+   def configure_account_update_params
+     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :lastname, :birthdate, :address, :education, :preferences, :income, :debt, :saving])
+   end
 
   # The path used after sign up.
   # def after_sign_up_path_for(resource)
